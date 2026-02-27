@@ -54,25 +54,21 @@ Crie um arquivo chamado `.env` na raiz do projeto. Você pode copiar o conteúdo
 
 ```env
 # --- FRONTEND ---
-# URL base para a API que o frontend irá chamar.
-# Use localhost para que o navegador possa acessar a API na sua máquina.
 VITE_API_BASE_URL=http://localhost:5000
-GEMINI_API_KEY=<OPCIONAL_SUA_CHAVE_GEMINI_API>
+GEMINI_API_KEY=
 
 # --- BACKEND (API) ---
-# Porta em que a API irá rodar.
 PORT=5000
 
 # --- BANCO DE DADOS (POSTGRES) ---
-# Nome do host do serviço do banco de dados (deve corresponder ao nome no docker-compose.yml).
 POSTGRES_HOST=postgres
 POSTGRES_PORT=5432
 POSTGRES_USER=admin
-POSTGRES_PASSWORD=password123
-POSTGRES_DB=erp_db
+POSTGRES_PASSWORD=senha_super_secreta
+POSTGRES_DB=meu_banco_de_dados
 
 # --- CREDENCIAIS PADRÃO ---
-# Senha para o primeiro usuário administrador a ser criado.
+DEFAULT_ADMIN_EMAIL=admin@estudiocruzeta.com.br
 DEFAULT_ADMIN_PASSWORD=Mudar@123
 ```
 
@@ -109,8 +105,8 @@ Após iniciar os containers, os seguintes serviços estarão acessíveis:
     - **Sistema:** PostgreSQL
     - **Servidor:** `postgres` (nome do serviço Docker)
     - **Usuário:** `admin`
-    - **Senha:** `password123`
-    - **Banco de dados:** `erp_db`
+    - **Senha:** `senha_super_secreta`
+    - **Banco de dados:** `meu_banco_de_dados`
 
 ---
 
