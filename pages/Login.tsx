@@ -117,7 +117,7 @@ export const Login: React.FC = () => {
       </Card>
       
       <div className="absolute bottom-4 text-center">
-        <p className="text-[10px] text-stone-400 font-medium">© {new Date().getFullYear()} Grupo ND. Todos os direitos reservados.</p>
+        <p className="text-[10px] text-stone-400 font-medium">© {new Date().getFullYear()} Estúdio Cruzeta. Todos direitos reservados.</p>
       </div>
     </div>
   );
